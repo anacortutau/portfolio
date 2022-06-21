@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './project.css'
 
 function Project({name, img,link}) {
@@ -11,8 +10,9 @@ function Project({name, img,link}) {
         <div className="p-circle"></div>
 
       </div>
-      <Link to={link}><strong>{name}</strong></Link>
+      {/* <a href={link} target="_blank" rel="noreferrer"><strong>{name}</strong></a> */}
       <img src={img} alt="" className="p-img" />
+      <a href={link} target="_blank" rel="noreferrer"><strong>{name}</strong></a>
       
       
      

@@ -1,14 +1,75 @@
 import React from 'react'
+import { BsFillPatchCheckFill } from 'react-icons/bs'
+import './skills.css'
 
 function Skills() {
   return (
-    <div>
+    <section id="experience">
+      <h2>Skills</h2>
 
-        <h3>Languages <span>HTML5, CSS3, Javascript(ES6), Java</span></h3>
-        <h3>Libraries <span>ReactJS, Redux, Bootstrap</span></h3>
-        <h3>Frameworks <span>ExpressJs, Handelbars, Material UI</span></h3>
-        <h3>Server Tools <span>NodeJS, API REST, Postman, Axios</span></h3>
+   
+    <div className ="container experience__container">
+      <div className="experience__frontend">
+        <h3>Frontend Development</h3>
+        <div className="experience__content">
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon" />
+            <h4>HTML</h4>
+            <small className="text">Experienced</small>
+          </article>
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon" />
+            <h4>CSS</h4>
+            <small className="text-light">Intermediate</small>
+          </article>
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon" />
+            <h4>JavaScript</h4>
+            <small className="text-light">Experienced</small>
+          </article>
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon"/>
+            <h4>Bootstrap</h4>
+            <small className="text-light">Intermediate</small>
+          </article>
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon" />
+            <h4>ReactJS</h4>
+            <small className="text-light">Intermediate</small>
+          </article>
+        </div>
+      </div>
+      <div classNAme="experience__backend">
+      <h3>Backend Development</h3>
+        <div className="experience__content">
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon"/>
+            <h4>Node JS</h4>
+            <small className="text-light">Experienced</small>
+          </article>
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon"/>
+            <h4>Mongo DB</h4>
+            <small className="text-light">Expereinced</small>
+          </article>
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon"/>
+            <h4>MySQL</h4>
+            <small className="text-light">Experienced</small>
+          </article>
+          <article className="experience__details">
+            <BsFillPatchCheckFill className="experience__details-icon"/>
+            <h4>Java 8</h4>
+            <small className="text-light">Experienced</small>
+          </article>
+        </div>
+      </div>
+
+   
+
     </div>
+    </section>
+    
   )
 }
 

@@ -1,0 +1,45 @@
+
+h2{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 60px;
+    
+}
+.experience__container > div{
+    background: #7FB3D5;
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.experience__container > div:hover {
+    background: transparent;
+    border-color: #7FB3D5 ;
+    cursor:default;
+}
+.experience__container > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.experience__content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+.experience__details-icon{
+    margin-top: 6px;
+
+}
+.text{
+    color: black;
+}

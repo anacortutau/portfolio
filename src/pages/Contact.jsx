@@ -8,15 +8,26 @@ import emailjs from "emailjs-com"
 function Contact() {
   const formRef= useRef()
   const [done, setDone] = useState(false)
+  const [dataEmail, setDataEmail] = useState({})
+
+  const handleInput = (e) =>{
+      e.preventDefault();
+
+      setDataEmail({...dataEmail, [e.target.name] : e.target.value})
+
+
+
+  }
   
   const handleSubmit = (e)=>{
     e.preventDefault();
     emailjs.sendForm(
-      'service_zhof2sv', 
-      'service_zhof2sv', formRef.current, 'YOUR_PUBLIC_KEY')
+      'service_zcn7c2w', 
+      'template_kze37kh', formRef.current, 'ZdMAxBoOpbhjImlaC')
     .then((result) => {
         console.log(result.text);
         setDone(true)
+        setDataEmail({user_name: "", user_email: "", message: ""})
     }, (error) => {
         console.log(error.text);
     });
@@ -39,11 +50,11 @@ function Contact() {
             </div>
           </div>
           <form  ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name"/>
+            <input type="text" placeholder="Name" name="user_name" onChange={handleInput} value={dataEmail.user_name}/>
             <br />
-            <input type="text" placeholder="Email" name="user-email"/>
+            <input type="text" placeholder="Email" name="user-email" onChange={handleInput} value={dataEmail.user_email}/>
             <br />
-            <textarea rows="5" placeholder="Message" name="message"/>
+            <textarea rows="5" placeholder="Message" name="message" onChange={handleInput} value={dataEmail.message}/>
             <br />
             <button>Submit</button>
             {done && "Thank you"}

@@ -29,8 +29,7 @@ function MyNavbar() {
                 <Container>
                     <Navbar.Brand as={NavLink}to="/">Ana C T</Navbar.Brand>
                     {/* <NavLink to="/" style={toggleStyles}>Ana C T</NavLink> */}
-                    <NavLink to="/experience"  style={toggleStyles}>Experience</NavLink>
-                    <NavLink to="/training"   style={toggleStyles}> Training</NavLink>
+                    <NavLink to="/experience"  style={toggleStyles}>Resume</NavLink>
                     <NavLink to="/projects"   style={toggleStyles}> Projects</NavLink>
                     <NavLink to="/skills"   style={toggleStyles}> Skills</NavLink>
                     <NavLink to="/contact" style={toggleStyles}> Contact </NavLink>
