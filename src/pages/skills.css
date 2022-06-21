@@ -22,6 +22,8 @@ h2{
     background: transparent;
     border-color: #7FB3D5 ;
     cursor:default;
+    transition: all 1s ease-in;
+
 }
 .experience__container > div h3{
     text-align: center;

@@ -7,7 +7,7 @@ function ProjectsList() {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Projects</h1>
+        <h1 className="c-title">Projects</h1>
         <p className="pl-desc">
          
         </p>
