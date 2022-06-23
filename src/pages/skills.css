@@ -7,13 +7,13 @@ h2{
 .experience__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 5rem;
     margin-top: 60px;
     
 }
 .experience__container > div{
     background: #7FB3D5;
-    padding: 2.4rem 5rem;
+    padding: 1.4rem 4rem;
     border-radius: 2rem;
     border: 1px solid transparent;
 }
@@ -30,18 +30,26 @@ h2{
     margin-bottom: 2rem;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
 
 }
-
-.experience__content{
+ .experience__content{
     display:grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
-}
+} 
 .experience__details-icon{
     margin-top: 6px;
+    
+    
+    
 
 }
 .text{
     color: black;
+}
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 100;
 }

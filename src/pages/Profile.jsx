@@ -8,6 +8,7 @@ import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngular, faCss3, faGit, faHtml5, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
 import Logo from '../img/logo.png'
+import ResumeList from "./ResumeList";
 // import Me from "../../src/img/me.png"
 
 function Profile() {
@@ -72,6 +73,7 @@ function Profile() {
         </div>
       </div>
 
+      <ResumeList/>
       <ProjectsList />
       <Skills />
       <Contact />

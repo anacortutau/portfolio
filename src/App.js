@@ -8,7 +8,7 @@ import MyNavbar from './components/MyNavbar';
 import ProjectsList from './pages/ProjectsList'
 import {  createContext, useContext, useState } from 'react';
  import { ThemeContext } from './context';
-import Resume from './pages/Resume';
+import ResumeList from './pages/ResumeList';
 
 
 
@@ -30,7 +30,7 @@ function App() {
 
 <Routes>
   <Route path="/" element={<Profile />}/>
-  <Route path="/experience" element={<Resume />} />
+  <Route path="/experience" element={<ResumeList />} />
   <Route path="/skills" element={<Skills />} />
   <Route path="/projects" element={<ProjectsList  />} />
   <Route path="/contact" element={<Contact  />} />

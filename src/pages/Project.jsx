@@ -3,7 +3,7 @@ import './project.css'
 
 function Project({name, img,link}) {
   return (
-    <div className="p">
+    <dv className="p">
       <div className="p-browser">
         <div className="p-circle"></div>
         <div className="p-circle"></div>
@@ -18,7 +18,7 @@ function Project({name, img,link}) {
      
       
       
-      </div>
+      </dv>
   )
 }
 
