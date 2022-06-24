@@ -15,6 +15,7 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import ResumeList from "./ResumeList";
+import Logo from '../img/logo.png'
 
 // import Me from "../../src/img/me.png"
 
@@ -23,9 +24,12 @@ function Profile() {
 
   return (
     <>
+    
       <Toggle />
-
+     
+      
       <div className="i">
+        
         <div className="i-left">
           <div className="i-left-wrapper">
             <h1 className="i-intro">
@@ -59,6 +63,8 @@ function Profile() {
       </div>
 
       <div className="stage-cube-cont">
+     
+      <img src={Logo} className="my-header"></img>
         <div className="cubespinner">
           <div className="face1">
             <FontAwesomeIcon icon={faAngular} color="#DD0031" />

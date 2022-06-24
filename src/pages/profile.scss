@@ -13,6 +13,24 @@
 
 }
 
+.my-header{
+ 
+   height: 600px;
+   margin-top: -350px;
+   animation: rotacion 30s infinite linear;
+   
+}
+.my-header:hover{
+    transform: translateY(-100px);
+}
+@keyframes rotacion{
+from{transform: rotateZ(0deg)}
+
+to{transform: rotateZ(360deg)}
+  
+
+
+}
 
 
 .i-left{
@@ -88,7 +106,7 @@
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-left: calc(50% - 100px);
-    margin-top: -100px;
+    margin-top: -200px;
     
     
 
