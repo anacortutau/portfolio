@@ -2,6 +2,7 @@ import React from 'react'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import './skills.css'
 
+
 function Skills() {
   return (
     <section id="experience">
@@ -13,7 +14,7 @@ function Skills() {
         <h3>Frontend Development</h3>
         <div className="experience__content">
           <article className="experience__details">
-            <BsFillPatchCheckFill className="experience__details-icon" />
+            <BsFillPatchCheckFill completed={80} />
             <h4>HTML</h4>
             <small className="text">Experienced</small>
           </article>

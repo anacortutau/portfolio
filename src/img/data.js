@@ -3,7 +3,7 @@
         id: 1,
         name: "Project-Game",
         img:"../../logo-game.jpeg",
-        description:"readme",
+        description:"Clean car is a game in which the player has to move the car horizontally and dodge the poop that the birds are throwing from above. The game ends when one of the poops falls on the car.",
         link:"https://anacortutau.github.io/Game-Proyect/"
         
     },
@@ -11,14 +11,14 @@
         id:2,
         name:"Project Veterinary",
         img:"../../Vet-Diary.jpeg",
-        description:"readme",
+        description:"Double functionality web application, to be able to search for veterinarians near your location and on the other hand if you are a veterinarian you can both schedule your patients and follow them up",
         link:"https://vet-app-directory.herokuapp.com/",
     },
     {
         id:3,
         name: "Project mEAT",
         img:"https://i.pinimg.com/736x/a5/db/bb/a5dbbb111fb809f14dd79474430a76fa.jpg",
-        description:"readme",
+        description:"Food service where the user can buy products both individually and menus,The user can add the products and menus to his shopping cart.",
         link:"https://meat-app-react.netlify.app",
     }
 ]
