@@ -2,7 +2,7 @@
     {
         id: 1,
         name: "Project-Game",
-        img:"../../logo-game.jpeg",
+        img:"../../img/logo-game.jpeg",
         description:"Clean car is a game in which the player has to move the car horizontally and dodge the poop that the birds are throwing from above. The game ends when one of the poops falls on the car.",
         link:"https://anacortutau.github.io/Game-Proyect/"
         
