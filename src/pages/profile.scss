@@ -15,9 +15,9 @@
 
 .my-header{
  
-   height: 600px;
-   margin-top: -950px;
-   margin-left: 1100px;
+   height: 150px;
+   margin-top: -1220px;
+   margin-left: 600px;
    animation: rotacion 30s infinite linear;
    
 }
@@ -108,15 +108,15 @@ to{transform: rotateZ(360deg)}
     animation-duration: 12s;
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
-    margin-top: -300px;
+    margin-left: calc(60% - 100px);
+    margin-top: -570px;
     
     
 
       div{
          position:absolute;
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
         border: 1px solid #ccc;
         background: rgba(255, 255, 255, 0.4);
         font-size: 100px;

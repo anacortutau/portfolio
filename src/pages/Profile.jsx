@@ -102,10 +102,27 @@ function Profile() {
         <br />
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+     
+
        
       <ResumeList />
+      <br />
       <ProjectsList />
+      <br />
+      <br />
       <Skills />
+      <br />
+      <br />
       <Contact />
       <Footer/>
 
