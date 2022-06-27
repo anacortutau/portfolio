@@ -13,6 +13,7 @@ import ResumeList from './pages/ResumeList';
 
 
 
+
 function App() {
   //const ThemeContext= createContext();
   const [dark, setDark] = useState(false)
@@ -24,19 +25,22 @@ function App() {
   return (
     <div >
     {/* // style={{backgroundColor: darkMode ?  "#222" : "white", color: darkMode && "white"}} */}
+    
+    <MyNavbar />
+    
 
-<MyNavbar />
-
-
-<Routes>
+   
+  <Routes>
+  
   <Route path="/" element={<Profile />}/>
   <Route path="/experience" element={<ResumeList />} />
   <Route path="/skills" element={<Skills />} />
   <Route path="/projects" element={<ProjectsList  />} />
   <Route path="/contact" element={<Contact  />} />
 
-
+ 
 </Routes>
+
   
     </div>
   );

@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import "./project.css";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { useNavigate } from "react-router-dom";
 
 function Project({ name, img, description, link }) {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const openModal = (e) => {
     e.preventDefault();
     setOpen(true);
   };
+  const handleSubmit = (e)=>{
+    navigate("/projects")
+  }
   return (
     <dv className="p">
       <div className="p-browser">
@@ -16,8 +21,10 @@ function Project({ name, img, description, link }) {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
       </div>
-      {/* <a href={link} target="_blank" rel="noreferrer"><strong>{name}</strong></a> */}
-      <img src={img} alt="" className="p-img" />
+      <div className="container-galeria">
+      <img src={img} alt="" className="galeria__img"/>
+      </div>
+     
       <div className="principal">
         <div className="secundario">
           <Button color="primary" onClick={openModal}>
@@ -31,8 +38,11 @@ function Project({ name, img, description, link }) {
         <ModalBody>{description}</ModalBody>
         <ModalFooter>
           <a href={link} target="_blank" rel="noreferrer">
-            <strong>{name}</strong>
+            <button><strong>{name}</strong></button>
           </a>
+          <form onSubmit={handleSubmit}>
+          <button type="submit">Projects</button>
+          </form>
         </ModalFooter>
       </Modal>
     </dv>

@@ -16,6 +16,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import ResumeList from "./ResumeList";
 import Logo from '../img/logo.png'
+import Footer from "../components/Footer";
+
 
 // import Me from "../../src/img/me.png"
 
@@ -62,9 +64,10 @@ function Profile() {
         </p>
       </div>
 
-      <div className="stage-cube-cont">
-     
+      
+    
       <img src={Logo} className="my-header"></img>
+
         <div className="cubespinner">
           <div className="face1">
             <FontAwesomeIcon icon={faAngular} color="#DD0031" />
@@ -85,12 +88,28 @@ function Profile() {
             <FontAwesomeIcon icon={faGit} color="#EC4D2H" />
           </div>
         </div>
-      </div>
-
+      
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+       
       <ResumeList />
       <ProjectsList />
       <Skills />
       <Contact />
+      <Footer/>
+
+     
     </>
   );
 }

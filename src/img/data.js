@@ -17,7 +17,7 @@
     {
         id:3,
         name: "Project mEAT",
-        img:"https://i.pinimg.com/736x/a5/db/bb/a5dbbb111fb809f14dd79474430a76fa.jpg",
+        img:"../../meat.jpeg",
         description:"Food service where the user can buy products both individually and menus,The user can add the products and menus to his shopping cart.",
         link:"https://meat-app-react.netlify.app",
     }

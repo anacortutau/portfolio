@@ -3,6 +3,9 @@ import {NavLink} from  "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
+import "./navbar.css"
+
+
 
 
 
@@ -25,7 +28,9 @@ function MyNavbar() {
   return (
     <div>
 
-            <Navbar bg="light" variant="light">
+            {/* <Navbar bg="light" variant="light"> */}
+            <Navbar className="navbar">
+            
                 <Container>
                     <Navbar.Brand as={NavLink}to="/">Ana C T</Navbar.Brand>
                     {/* <NavLink to="/" style={toggleStyles}>Ana C T</NavLink> */}
@@ -35,8 +40,14 @@ function MyNavbar() {
                     <NavLink to="/contact" style={toggleStyles}> Contact </NavLink>
                     
                     
-                    </Container>  
+                    </Container>
+                   
                 </Navbar>
+
+             
+
+                
+                
     </div>
   )
 }

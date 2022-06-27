@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: aliceblue;
+    border: 100px;
+    
+   
+    
+}
+.footer-social{
+    display: flex;
+    margin-left: 600px;
+    margin-top: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+
+}
+
+.footer-social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: -60px;
+}

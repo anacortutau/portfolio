@@ -16,7 +16,8 @@
 .my-header{
  
    height: 600px;
-   margin-top: -350px;
+   margin-top: -950px;
+   margin-left: 1100px;
    animation: rotacion 30s infinite linear;
    
 }
@@ -98,6 +99,8 @@ to{transform: rotateZ(360deg)}
 
 
 
+
+
 .cubespinner{
     animation-name: spincube;
     animation-timing-function: ease-in-out;
@@ -106,7 +109,7 @@ to{transform: rotateZ(360deg)}
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-left: calc(50% - 100px);
-    margin-top: -200px;
+    margin-top: -300px;
     
     
 
