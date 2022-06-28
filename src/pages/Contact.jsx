@@ -36,7 +36,7 @@ function Contact() {
   }
   return (
     <div className="c">
-      <div className="c-bg"></div>
+      <div className="c-bg">
       <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title"> Contact with me </h1>
@@ -61,6 +61,7 @@ function Contact() {
             {done && "Thank you"}
           </form>
         </div>
+      </div>
       </div>
     </div>
   );
