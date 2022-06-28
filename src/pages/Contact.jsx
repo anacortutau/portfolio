@@ -21,6 +21,7 @@ function Contact() {
   
   const handleSubmit = (e)=>{
     e.preventDefault();
+    console.log(formRef.current)
     emailjs.sendForm(
       'service_zcn7c2w', 
       'template_kze37kh', formRef.current, 'ZdMAxBoOpbhjImlaC')
