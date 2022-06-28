@@ -22,7 +22,7 @@ function Project({ name, img, description, link }) {
         <div className="p-circle"></div>
       </div>
       <div className="container-galeria">
-      <img src={img} alt="" className="galeria__img"/>
+      {/* <img src={img} alt="" className="galeria__img"/> */}
       <h1 className="nameProject"><strong>{name}</strong></h1>
       </div>
      

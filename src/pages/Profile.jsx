@@ -18,7 +18,7 @@ import ResumeList from "./ResumeList";
 import Logo from "../img/logo.png";
 import Footer from "../components/Footer";
 
-// import Me from "../../src/img/me.png"
+
 
 function Profile() {
   const [dark, setDark] = useState(false);
@@ -82,13 +82,11 @@ function Profile() {
       </div>
 
       <ResumeList />
-      <br />
+
       <ProjectsList />
-      <br />
-      <br />
+
       <Skills />
-      <br />
-      <br />
+
       <Contact />
       <Footer />
     </>
