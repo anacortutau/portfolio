@@ -1,66 +1,57 @@
-.container{
-    text-align: center;
+.container {
+  text-align: center;
 }
 
-.history{
-   font-style: italic;
-   font-size: 15px;
-   text-decoration:underline;
-   
+.history {
+  font-style: italic;
+  font-size: 15px;
+  text-decoration: underline;
 }
 
-
-.skills{
-    font-style: italic;
-    font-weight: 300;
-    
+.skills {
+  font-style: italic;
+  font-weight: 300;
 }
-.timeline-container{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 40px 0;
-    text-align: center;
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 40px 0;
+  text-align: center;
 }
-.timeline-container::after{
-    background-color: black ;
-    content: '';
-    position: absolute;
-    left: calc(50% - 2px);
-    width: 4px;
-    height: 100%;
-    
+.timeline-container::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 100%;
 }
 
-.timeline-item{
-    
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 30px;
-    margin: 10px 0;
-    width: 50%;
-
-
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  margin: 10px 0;
+  width: 50%;
 }
-.timeline-item:nth-child(odd){
-    align-self: flex-end;
-    justify-content: flex-start;
-    padding-right: 0px;
-    padding-left: 30px;
-
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-right: 0px;
+  padding-left: 30px;
 }
-.timeline-item-content{
-    background-color: #7FB3D5;
-    max-width: 70%;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    text-align: right;
-
+.timeline-item-content {
+  background-color: #7fb3d5;
+  max-width: 70%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  text-align: right;
 }
-.timeline-item:nth-child(odd) .timeline-item-content{
-    align-items: flex-start;
-    text-align: left;
+.timeline-item:nth-child(odd) .timeline-item-content {
+  align-items: flex-start;
+  text-align: left;
 }

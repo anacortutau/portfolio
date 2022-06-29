@@ -11,9 +11,9 @@ function Project({ name, img, description, link }) {
     e.preventDefault();
     setOpen(true);
   };
-  const handleSubmit = (e)=>{
-    navigate("/projects")
-  }
+  const handleSubmit = (e) => {
+    navigate("/projects");
+  };
   return (
     <dv className="p">
       <div className="p-browser">
@@ -22,10 +22,11 @@ function Project({ name, img, description, link }) {
         <div className="p-circle"></div>
       </div>
       <div className="container-galeria">
-      {/* <img src={img} alt="" className="galeria__img"/> */}
-      <h1 className="nameProject"><strong>{name}</strong></h1>
+        <h1 className="nameProject">
+          <strong>{name}</strong>
+        </h1>
       </div>
-     
+
       <div className="principal">
         <div className="secundario">
           <Button color="primary" onClick={openModal}>
@@ -39,10 +40,12 @@ function Project({ name, img, description, link }) {
         <ModalBody>{description}</ModalBody>
         <ModalFooter>
           <a href={link} target="_blank" rel="noreferrer">
-            <button><strong>{name}</strong></button>
+            <button>
+              <strong>{name}</strong>
+            </button>
           </a>
           <form onSubmit={handleSubmit}>
-          <button type="submit">Projects</button>
+            <button type="submit">Projects</button>
           </form>
         </ModalFooter>
       </Modal>

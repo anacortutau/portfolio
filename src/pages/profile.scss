@@ -1,190 +1,167 @@
-.i{
-    margin: 0;
-    padding: 0;
-   
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    
+.i {
+  margin: 0;
+  padding: 0;
 
-    
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .i-left-wrapper {
-    padding: 50px;
-    
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     font-weight: 100;
-    // color: black;
+  padding: 50px;
 
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  // color: black;
 }
 
-.my-header{
- 
-   height: 150px;
-   margin-top: -1220px;
-   margin-left: 600px;
-   animation: rotacion 30s infinite linear;
-   
+.my-header {
+  height: 150px;
+  margin-top: -1220px;
+  margin-left: 600px;
+  animation: rotacion 30s infinite linear;
 }
-.my-header:hover{
+.my-header:hover {
+  transform: translateY(-100px);
+}
+@keyframes rotacion {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.i-left {
+  flex: 1;
+
+  // display:flex;
+  // align-items: center;
+  // justify-content: center;
+}
+.i-right {
+  flex: 1;
+  margin-left: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+
+.i-intro {
+  font-size: 100px;
+  font-weight: 300;
+}
+.i-name {
+  font-size: 80px;
+  // text-align: center;
+  color: #7fb3d5;
+}
+.i-title {
+  overflow: hidden;
+}
+.i-title-item {
+  height: 50px;
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #7fb3d5;
+  display: flex;
+  align-items: center;
+}
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
     transform: translateY(-100px);
-}
-@keyframes rotacion{
-from{transform: rotateZ(0deg)}
-
-to{transform: rotateZ(360deg)}
-  
-
-
-}
-
-
-.i-left{
-    flex:1;
-    
-    // display:flex;
-    // align-items: center;
-    // justify-content: center;
-}
-.i-right{
-    flex:1;
-    margin-left: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
 }
 
-.i-intro{
-    font-size: 100px;
-    font-weight: 300;
-}
-.i-name{
-    font-size: 80px;
-    // text-align: center;
-    color:#7FB3D5;
-
-}
-.i-title{
-    overflow: hidden;
-
-
-}
-.i-title-item{
-    height: 50px;
-    margin-left: 50px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #7FB3D5;
-    display: flex;
-    align-items: center;
-}
-.i-title-wrapper{
-    height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
+.stage-cube-cont {
+  display: none;
 }
 
-
-@keyframes move{
-    25%{
-        transform: translateY(-50px);
-    }
-    50%{
-        transform: translateY(-100px); 
-    }
-    75%{
-        transform: translateY(-150px);
-    }
-    100%{
-        transform: translateY(-200px);
-    }
-
-
+@media screen and (min-width: 980px) {
+  .i {
+    flex-direction: row;
+  }
+  .stage-cube-cont {
+    display: block;
+    margin-left: 0;
+    width: 50%;
+    padding-top: 18%;
+  }
 }
-
-.stage-cube-cont{
-    display:none;
-
-   
-}
-
-
-
-@media screen and (min-width: 980px){
-    .i{
-        flex-direction: row;
-    }
-    .stage-cube-cont{
-        display:block;
-         margin-left: 0;
-         width: 50%;
-         padding-top: 18%;
-        
-    }
-
-    
-}
-
-
-
 
 .cubespinner {
-    animation-name: spincube;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-    transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
-   
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
 }
 .cubespinner div {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
-    background: rgba(255, 255, 255, 0.4);
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px 0px lightyellow;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px lightyellow;
 }
 .face1 {
-    transform: translateZ(100px);
+  transform: translateZ(100px);
 }
 .face2 {
-    transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(100px);
 }
 .face3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
 }
 .face4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
 }
 .face5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
 }
 .face6 {
-    transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(100px);
 }
 @keyframes spincube {
-    from, to {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-   }
-    16% {
-        transform: rotateY(-90deg);
-   }
-    33% {
-        transform: rotateY(-90deg) rotateZ(90deg);
-   }
-    50% {
-        transform: rotateY(-180deg) rotateZ(90deg);
-   }
-    66% {
-        transform: rotateY(-270deg) rotateZ(90deg);
-   }
-    83% {
-        transform: rotateY(90deg);
-   }
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateY(90deg);
+  }
 }
-

@@ -7,25 +7,23 @@ import Resume from "./Resume";
 function ResumeList() {
   return (
     <>
-    <br />
-    <h1 className="c-title">Resume</h1>
-    <div className="timeline-container">
-      <br /> 
-      {timelineElements.map((element) => (
-      
-        <Resume
-          key={element.id}
-          name={element.name}
-          title={element.title}
-          company={element.company}
-          school={element.school}
-          description={element.description}
-          skills={element.skills}
-          date={element.date}
-          
-        />
-      ))}
-    </div>
+      <br />
+      <h1 className="c-title">Resume</h1>
+      <div className="timeline-container">
+        <br />
+        {timelineElements.map((element) => (
+          <Resume
+            key={element.id}
+            name={element.name}
+            title={element.title}
+            company={element.company}
+            school={element.school}
+            description={element.description}
+            skills={element.skills}
+            date={element.date}
+          />
+        ))}
+      </div>
     </>
   );
 }

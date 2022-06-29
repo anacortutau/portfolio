@@ -3,7 +3,6 @@ import "./profile.scss";
 import ProjectsList from "../pages/ProjectsList";
 import Contact from "./Contact";
 
-
 import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,13 +17,7 @@ import ResumeList from "./ResumeList";
 import Logo from "../img/logo.png";
 import Footer from "../components/Footer";
 
-
-
-
-
 function Profile() {
-  
-
   return (
     <>
       <div className="i">
