@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./profile.scss";
 import ProjectsList from "../pages/ProjectsList";
 import Contact from "./Contact";
-import Toggle from "../components/toggle/Toggle";
-import { ThemeProvider } from "react-bootstrap";
+
+
 import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,13 +20,13 @@ import Footer from "../components/Footer";
 
 
 
+
+
 function Profile() {
-  const [dark, setDark] = useState(false);
+  
 
   return (
     <>
-      <Toggle />
-
       <div className="i">
         <div className="i-left">
           <div className="i-left-wrapper">

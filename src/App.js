@@ -6,27 +6,31 @@ import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import MyNavbar from './components/MyNavbar';
 import ProjectsList from './pages/ProjectsList'
-import {  createContext, useContext, useState } from 'react';
- import { ThemeContext } from './context';
 import ResumeList from './pages/ResumeList';
+import Toggle from './components/toggle/Toggle';
+import React,{ createContext, useContext} from 'react';
+import { ThemeContext } from './context';
 
 
 
 
 
-function App() {
-  //const ThemeContext= createContext();
-  const [dark, setDark] = useState(false)
+function App(props) {
+
   const theme = useContext(ThemeContext)
-  console.log(theme)
-  //const darkMode = theme.state.darkMode;
 
+  const darkMode = theme.state.darkMode;
+
+  
   
   return (
    <>
-    {/* // style={{backgroundColor: darkMode ?  "#222" : "white", color: darkMode && "white"}} */}
+    <div style={{backgroundColor: darkMode ? "#222": "white", color: darkMode && "white"}}>
+
     
+    <Toggle/>
     <MyNavbar />
+    
    
     
 
@@ -42,7 +46,7 @@ function App() {
  
 </Routes>
 
-  
+</div>
 </>
   );
 }

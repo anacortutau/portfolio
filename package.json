@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://anacortutau.github.io/portfolio",
+  "homepage": "http://anacortutau.github.io/portfolio",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
@@ -24,15 +24,16 @@
     "react-step-progress-bar": "^1.0.3",
     "react-vertical-timeline-component": "^3.5.2",
     "reactstrap": "^9.1.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject":"react-scripts eject"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
